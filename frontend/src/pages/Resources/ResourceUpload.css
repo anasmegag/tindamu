@@ -1,0 +1,35 @@
+/* ── ResourceUpload ──────────────────────────────────────────────── */
+
+.resource-upload-page {
+    padding: 1.5rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.resource-upload-header {
+    margin-bottom: 1.5rem;
+}
+
+.resource-upload-header h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+}
+
+.resource-upload-header p {
+    color: var(--color-text-secondary);
+    font-size: 0.95rem;
+}
+
+.resource-upload-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-hint {
+    font-size: 0.75rem;
+    color: var(--color-text-secondary);
+    margin-top: 0.3rem;
+    display: block;
+}

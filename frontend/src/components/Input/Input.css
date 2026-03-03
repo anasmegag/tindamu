@@ -1,0 +1,67 @@
+/* ── Input ──────────────────────────────────────────────────────────── */
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+}
+
+.input-group__label {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--color-text);
+}
+
+.input-group__wrapper {
+    position: relative;
+}
+
+.input-group__icon {
+    position: absolute;
+    left: 0.85rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--color-text-secondary);
+    font-size: 1rem;
+    pointer-events: none;
+}
+
+.input-group__field {
+    width: 100%;
+    padding: 0.65rem 1rem;
+    font-size: 0.9rem;
+    font-family: inherit;
+    color: var(--color-text);
+    background: var(--color-surface);
+    border: 1.5px solid var(--color-border);
+    border-radius: var(--radius-md);
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.input-group__field--with-icon {
+    padding-left: 2.5rem;
+}
+
+.input-group__field::placeholder {
+    color: var(--color-text-secondary);
+}
+
+.input-group__field:focus {
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 3px var(--color-primary-light);
+}
+
+/* Error state */
+.input-group--error .input-group__field {
+    border-color: var(--color-danger);
+}
+
+.input-group--error .input-group__field:focus {
+    box-shadow: 0 0 0 3px var(--color-danger-light);
+}
+
+.input-group__error {
+    font-size: 0.8rem;
+    color: var(--color-danger);
+}

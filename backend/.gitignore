@@ -1,0 +1,30 @@
+# Environnement virtuel Python
+venv/
+.venv/
+env/
+
+# Cache Python
+__pycache__/
+*.py[cod]
+*.pyc
+*.pyo
+
+# Variables d'environnement (ne jamais commiter)
+.env
+
+# Base de données locale
+*.db
+*.sqlite
+
+# Logs
+*.log
+
+# Distribution
+dist/
+build/
+*.egg-info/
+
+# IDE
+.idea/
+.vscode/
+*.swp

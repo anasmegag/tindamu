@@ -1,0 +1,87 @@
+/* NotFound.css + ErrorPage.css partagés */
+
+.not-found-page,
+.error-page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    padding: 2rem;
+}
+
+.not-found-content,
+.error-content {
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.not-found-code,
+.error-code {
+    font-size: 7rem;
+    font-weight: 900;
+    background: linear-gradient(90deg, #a78bfa, #60a5fa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    line-height: 1;
+    margin-bottom: 1rem;
+}
+
+.not-found-content h1,
+.error-content h1 {
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 0 0 0.75rem;
+}
+
+.not-found-content p,
+.error-content p {
+    color: rgba(255, 255, 255, 0.55);
+    font-size: 1rem;
+    margin: 0 0 2rem;
+    max-width: 340px;
+}
+
+.error-detail {
+    background: rgba(248, 113, 113, 0.1);
+    border: 1px solid rgba(248, 113, 113, 0.3);
+    border-radius: 10px;
+    padding: 0.75rem 1.2rem;
+    color: #fca5a5;
+    font-size: 0.85rem;
+    font-family: monospace;
+    margin-bottom: 2rem;
+    max-width: 400px;
+}
+
+.btn-home {
+    display: inline-block;
+    background: linear-gradient(135deg, #a78bfa, #60a5fa);
+    color: #fff;
+    text-decoration: none;
+    padding: 0.8rem 2rem;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: opacity 0.2s, transform 0.1s;
+}
+
+.btn-home:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}

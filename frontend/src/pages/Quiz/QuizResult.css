@@ -1,0 +1,145 @@
+/* ── QuizResult ──────────────────────────────────────────────────── */
+
+.quiz-result-page {
+    padding: 1.5rem;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+}
+
+.result-card {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    padding: 2.5rem;
+    text-align: center;
+    width: 100%;
+    animation: fadeInUp 0.5s ease;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.result-emoji {
+    font-size: 4rem;
+    margin-bottom: 0.75rem;
+    animation: bounce 0.6s ease;
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-15px);
+    }
+
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+.result-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.result-message {
+    color: var(--color-text-secondary);
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+/* ── Score Circle ────────────────────────────────────────────────── */
+
+.result-score-circle {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 6px solid var(--score-color, var(--color-primary));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 2rem;
+    background: var(--color-bg);
+}
+
+.score-value {
+    font-size: 2.25rem;
+    font-weight: 800;
+    color: var(--score-color, var(--color-primary));
+    line-height: 1;
+}
+
+.score-detail {
+    font-size: 0.85rem;
+    color: var(--color-text-secondary);
+    margin-top: 0.25rem;
+}
+
+/* ── Stats ───────────────────────────────────────────────────────── */
+
+.result-stats {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.result-stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.stat-icon {
+    font-size: 1.25rem;
+}
+
+.stat-value {
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.stat-label {
+    font-size: 0.75rem;
+    color: var(--color-text-secondary);
+}
+
+/* ── Actions ─────────────────────────────────────────────────────── */
+
+.result-actions {
+    display: flex;
+    gap: 0.75rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.result-empty {
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+.result-empty p {
+    color: var(--color-text-secondary);
+    margin-bottom: 1.5rem;
+}
